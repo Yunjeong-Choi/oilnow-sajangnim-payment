@@ -1,9 +1,9 @@
-import Container from "./components/container";
+import OrderContainer from "./components/container/OrderContainer";
 
 function App() {
   return (
     <div className="App">
-      <Container />
+      <OrderContainer />
     </div>
   );
 }
