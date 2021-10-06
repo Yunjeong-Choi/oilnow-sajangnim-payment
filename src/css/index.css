@@ -1,4 +1,5 @@
 @import "reset.css";
+@import "variable.css";
 
 body {
   margin: 0;
@@ -7,9 +8,15 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  color: var(--darkGray);
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+button {
+  color: var(--darkGray);
 }
