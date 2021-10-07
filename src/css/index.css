@@ -20,4 +20,5 @@ code {
 
 button {
   color: var(--darkGray);
+  box-sizing: border-box;
 }

@@ -23,7 +23,7 @@ export default ContainerHeader;
 //styled-components
 const HeaderBox = styled.header`
   height: 78px;
-  background: white;
+  background: #ffffff;
 
   display: flex;
   justify-content: space-between;
