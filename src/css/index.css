@@ -19,6 +19,11 @@ code {
 }
 
 button {
-  color: var(--darkGray);
+  background: #ffffff;
   box-sizing: border-box;
+  border: 0.7px solid var(--gray);
+  cursor: pointer;
+
+  color: var(--darkGray);
+  text-align: center;
 }

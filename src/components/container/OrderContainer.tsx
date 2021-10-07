@@ -1,5 +1,6 @@
 import ContainerHeader from "./common/ContainerHeader";
 import styled from "styled-components";
+import { RoundSquareButton } from "../common/Buttons";
 
 const payStatusList = ["결제대기", "결제완료", "취소요청", "취소완료"];
 
@@ -95,14 +96,16 @@ const PayStatusFilter = styled.div`
   margin-bottom: 10px;
 `;
 
-//TODO: roundsquarebutton으로 리팩토링 필요 (radius 18px로 통일)
-//squarebutton은 radius 4px로 통일
-const PayStatus = styled.button`
+const PayStatus = styled(RoundSquareButton)`
   height: 35px;
+  width: 80px;
 `;
 
 //TODO: styled-component에서 input은 어떻게 사용하는가
+//input의 테두리랑 사이즈도 문제임
 const UserIDFilter = styled.input`
   height: 35px;
   width: 347px;
+  border: 0.7px solid var(--gray);
+  box-sizing: border-box;
 `;

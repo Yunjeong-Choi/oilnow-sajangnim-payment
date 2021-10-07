@@ -1,5 +1,6 @@
 import { FunctionComponent } from "react";
 import styled from "styled-components";
+import { RoundSquareButton } from "../../common/Buttons";
 
 const ContainerHeader: FunctionComponent = (props) => {
   const { children } = props;
@@ -35,17 +36,14 @@ const HeaderInnerBox = styled.div`
   display: flex;
 `;
 
-const MenuButton = styled.button`
+const MenuButton = styled(RoundSquareButton)`
   width: 48px;
   height: 36px;
   background: var(--lightGray);
-  border-radius: 18px;
   border: none;
-  cursor: pointer;
 
   font-weight: bold;
   font-size: 14px;
-  text-align: center;
 
   margin-right: 8px;
 `;
@@ -69,6 +67,7 @@ const NotiButton = styled(MenuButton)`
 const QRButton = styled(MenuButton)`
   width: 77px;
   background: var(--oilBlue);
+
   color: white;
 
   margin-right: 0;
