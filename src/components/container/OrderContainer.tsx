@@ -33,7 +33,10 @@ const OrderContainer = () => {
               <PayStatus key={status}>{status}</PayStatus>
             ))}
           </PayStatusFilter>
-          <UserIDFilter></UserIDFilter>
+          <UserIDFilter
+            type="text"
+            placeholder="고객ID를 입력해주세요."
+          ></UserIDFilter>
         </OrderSearchFilter>
       </main>
       <footer></footer>
@@ -46,6 +49,8 @@ export default OrderContainer;
 // styled-components
 const OrderSearchFilter = styled.div`
   background: #ffffff;
+
+  font-size: 20px;
 
   display: flex;
   flex-direction: column;
@@ -60,7 +65,6 @@ const FilterTitle = styled.div`
 
 const TitleText = styled.div`
   font-weight: 500;
-  font-size: 18px;
 `;
 
 //TODO: datefilter에 라이브러리 연결하고 placeholder와 달력아이콘 정렬하기
@@ -80,8 +84,6 @@ const StartDate = styled.button`
 `;
 
 const Tilde = styled.div`
-  font-size: 16px;
-
   display: flex;
   justify-content: center;
   align-items: center;
@@ -97,8 +99,10 @@ const PayStatusFilter = styled.div`
 `;
 
 const PayStatus = styled(RoundSquareButton)`
-  height: 35px;
+  height: 30px;
   width: 80px;
+
+  font-size: 14px;
 `;
 
 //TODO: styled-component에서 input은 어떻게 사용하는가
@@ -108,4 +112,6 @@ const UserIDFilter = styled.input`
   width: 347px;
   border: 0.7px solid var(--gray);
   box-sizing: border-box;
+
+  padding: 10px;
 `;
