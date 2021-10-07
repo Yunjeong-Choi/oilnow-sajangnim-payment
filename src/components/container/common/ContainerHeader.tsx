@@ -25,11 +25,10 @@ const HeaderBox = styled.header`
   height: 78px;
   background: white;
 
-  padding: 0 10px;
-
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: var(--defaultSidePadding);
 `;
 
 const HeaderInnerBox = styled.div`
@@ -47,7 +46,6 @@ const MenuButton = styled.button`
   font-weight: bold;
   font-size: 14px;
   text-align: center;
-  letter-spacing: -0.04em;
 
   margin-right: 8px;
 `;
