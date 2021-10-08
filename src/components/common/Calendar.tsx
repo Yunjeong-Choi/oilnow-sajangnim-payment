@@ -1,6 +1,6 @@
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
-import { FunctionComponent, useState } from "react";
+import { FunctionComponent } from "react";
 //TODO: React도 같이 임포트 해줘야 하나?
 
 interface CalendarProps {

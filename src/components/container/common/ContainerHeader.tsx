@@ -23,13 +23,14 @@ export default ContainerHeader;
 
 //styled-components
 const HeaderBox = styled.header`
-  height: 78px;
   background: #ffffff;
 
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: var(--defaultSidePadding);
+  padding-top: 20px;
+  padding-bottom: 20px;
 `;
 
 const HeaderInnerBox = styled.div`

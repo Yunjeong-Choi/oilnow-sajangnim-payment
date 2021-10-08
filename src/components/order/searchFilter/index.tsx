@@ -7,7 +7,7 @@ import UserIDFilter from "./UserIDFilter";
 
 const OrderSearchFilter = () => {
   return (
-    <SearchFBox>
+    <SearchFilter>
       <FilterTitle />
       <DateFilter />
       <PayStatusFilter />
@@ -15,14 +15,14 @@ const OrderSearchFilter = () => {
         <UserIDFilter />
         <FilterResetButton>초기화</FilterResetButton>
       </LastFilter>
-    </SearchFBox>
+    </SearchFilter>
   );
 };
 
 export default OrderSearchFilter;
 
 // styled-components
-const SearchFBox = styled.div`
+const SearchFilter = styled.div`
   background: #ffffff;
 
   font-size: 20px;
@@ -30,6 +30,7 @@ const SearchFBox = styled.div`
   display: flex;
   flex-direction: column;
   padding: var(--defaultSidePadding);
+  padding-bottom: 10px;
 `;
 
 const LastFilter = styled.div`
