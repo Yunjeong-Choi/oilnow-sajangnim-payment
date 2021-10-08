@@ -5,7 +5,7 @@ import DateFilter from "./DateFilter";
 import PayStatusFilter from "./PayStatusFilter";
 import UserIDFilter from "./UserIDFilter";
 
-const OrderSearchFilter = () => {
+const PaySearchFilter = () => {
   return (
     <SearchFilter>
       <FilterTitle />
@@ -19,7 +19,7 @@ const OrderSearchFilter = () => {
   );
 };
 
-export default OrderSearchFilter;
+export default PaySearchFilter;
 
 // styled-components
 const SearchFilter = styled.div`

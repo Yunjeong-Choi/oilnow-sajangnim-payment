@@ -1,17 +1,18 @@
 import styled from "styled-components";
 import { RoundSquareButton, SquareButton } from "../../common/Buttons";
 import ListHeader from "./ListHeader";
+import ListContainer from "./ListContainer";
 
-const OrderSearchResultList = () => {
+const PaySearchResultList = () => {
   return (
     <ResultList>
       <ListHeader />
-      <ListContainer></ListContainer>
+      <ListContainer />
     </ResultList>
   );
 };
 
-export default OrderSearchResultList;
+export default PaySearchResultList;
 
 //styled-components
 const ResultList = styled.div`
@@ -21,5 +22,3 @@ const ResultList = styled.div`
   padding: var(--defaultSidePadding);
   padding-top: 10px;
 `;
-
-const ListContainer = styled.div``;

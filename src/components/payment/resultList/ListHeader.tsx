@@ -3,6 +3,7 @@ import styled from "styled-components";
 const ListHeader = () => {
   return (
     <HeaderBox>
+      {/* TODO: container 열간격과 어떻게 맞출것인가 */}
       <ColumnTitle>결제상태</ColumnTitle>
       <ColumnTitle>일자</ColumnTitle>
       <ColumnTitle>고객ID</ColumnTitle>
@@ -26,7 +27,7 @@ const HeaderBox = styled.div`
 `;
 
 const ColumnTitle = styled.div`
-  width: 15%;
+  width: 60px;
 
   font-size: 14px;
 
@@ -36,5 +37,5 @@ const ColumnTitle = styled.div`
 `;
 
 const SortBy = styled.select`
-  width: 15%;
+  width: 60px;
 `;

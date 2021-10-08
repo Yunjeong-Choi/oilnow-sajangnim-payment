@@ -1,21 +1,21 @@
 import ContainerHeader from "./common/ContainerHeader";
-import OrderSearchFilter from "../order/searchFilter";
-import OrderSearchResultList from "../order/resultList";
+import PaySearchFilter from "../payment/searchFilter";
+import PaySearchResultList from "../payment/resultList";
 // import styled from "styled-components";
 
-const OrderContainer = () => {
+const PayContainer = () => {
   return (
     <>
       <ContainerHeader>주문관리</ContainerHeader>
       <main>
-        <OrderSearchFilter />
-        <OrderSearchResultList />
+        <PaySearchFilter />
+        <PaySearchResultList />
       </main>
       <footer></footer>
     </>
   );
 };
 
-export default OrderContainer;
+export default PayContainer;
 
 // styled-components

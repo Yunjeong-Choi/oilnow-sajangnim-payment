@@ -1,9 +1,9 @@
-import OrderContainer from "./components/container/OrderContainer";
+import PayContainer from "./components/container/PayContainer";
 
 function App() {
   return (
     <div className="App">
-      <OrderContainer />
+      <PayContainer />
     </div>
   );
 }
