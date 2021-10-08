@@ -1,15 +1,16 @@
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
-import { FunctionComponent, useState } from "react"; //TODO: React도 같이 임포트 해줘야 하나?
+import { FunctionComponent, useState } from "react";
+//TODO: React도 같이 임포트 해줘야 하나?
 
-interface DateBoxProps {
+interface CalendarProps {
   selected: Date;
   onChange: (arg0: Date) => void;
   placeholderText: string;
   minDate?: Date;
 }
 
-const DateBox: FunctionComponent<DateBoxProps> = (props) => {
+const Calendar: FunctionComponent<CalendarProps> = (props) => {
   const { selected, onChange, placeholderText, minDate } = props;
 
   return (
@@ -24,7 +25,7 @@ const DateBox: FunctionComponent<DateBoxProps> = (props) => {
   );
 };
 
-export default DateBox;
+export default Calendar;
 
 // const StartDate = styled.button`
 //   height: 35px;
@@ -35,3 +36,4 @@ export default DateBox;
 // `;
 
 // TODO: 캘린더 박스의 화살표를 어떻게 없앨까
+//TODO: DateBox 자체의 style 설정해줘야함
