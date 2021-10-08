@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { RoundSquareButton } from "../../common/Buttons";
 
-const payStatusList = ["결제대기", "결제완료", "취소요청", "취소완료"];
+const payStatusList = ["결제완료", "취소요청", "취소완료"];
 
 const PayStatusFilter = () => {
   return (
@@ -25,7 +25,8 @@ const PayStatusBox = styled.div`
 
 const PayStatus = styled(RoundSquareButton)`
   height: 30px;
-  width: 80px;
+  width: 30%;
 
   font-size: 14px;
 `;
+//width 고정값은 80px

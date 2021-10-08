@@ -6,7 +6,7 @@ import PaySearchResultList from "../payment/resultList";
 const PayContainer = () => {
   return (
     <>
-      <ContainerHeader>주문관리</ContainerHeader>
+      <ContainerHeader>결제관리</ContainerHeader>
       <main>
         <PaySearchFilter />
         <PaySearchResultList />

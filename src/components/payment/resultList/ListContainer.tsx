@@ -1,10 +1,11 @@
 import styled from "styled-components";
 
+//TODO: infinite scroll 직접 구현해보기
 const ListContainer = () => {
   return (
     <ContainerBox>
       <ListItem>
-        <PayStatus>결제대기</PayStatus>
+        <PayStatus>결제완료</PayStatus>
         <PayText>21.09.10</PayText>
         <PayText>younghee</PayText>
         <PayText>10,000</PayText>
@@ -19,7 +20,6 @@ export default ListContainer;
 //styled-components
 const ContainerBox = styled.div`
   font-size: 14px;
-
   padding-top: 8px;
 `;
 
@@ -41,7 +41,7 @@ const PayStatus = styled(PayText)`
   box-sizing: border-box;
   border-radius: 18px;
   border: none;
-  background: palegreen;
+  background: var(--lightGreen);
 
   font-size: 12px;
 
