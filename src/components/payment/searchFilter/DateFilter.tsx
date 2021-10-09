@@ -3,16 +3,15 @@ import Calendar from "../../common/Calendar";
 import { useState } from "react";
 
 const DateFilter = () => {
-  const [startDate, setStartDate] = useState(new Date());
-  const [endDate, setEndDate] = useState(new Date());
+  const [startDate, setStartDate] = useState<Date>();
+  const [endDate, setEndDate] = useState<Date>();
   //TODO: 초기값을 없애고 싶은데 그럼 발생하는 type의 문제를 어떻게 해야할지 모르겠음...
 
   return (
     <DateBox>
       <Calendar
         selected={startDate}
-        onChange={(date) => setStartDate(date)}
-        // TODO: 여기 인자에 타입을 지정해주니까 에러가 없어졌다
+        onChange={(date: Date) => setStartDate(date)}
         placeholderText="시작일자"
       />
       <Tilde>~</Tilde>

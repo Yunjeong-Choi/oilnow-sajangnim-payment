@@ -21,4 +21,3 @@ const UserIDInput = styled.input`
 `;
 
 //TODO: enter하면 왜 submit이 안돼지
-//왜 오른쪽에 여백이 남는지 모르겠네...
