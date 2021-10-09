@@ -2,6 +2,8 @@ import { FunctionComponent, useState } from "react";
 import styled from "styled-components";
 import * as payDatabase from "../../../database/payDatabase.json";
 import { SquareButton } from "../../common/Buttons";
+import { useAppDispatch } from "../../../app/hooks";
+import { isOpen } from "../../../features/paySlice";
 
 const dataList = payDatabase.dataList;
 
@@ -14,7 +16,11 @@ const ListItem: FunctionComponent<ListItemProps> = (props) => {
   const curData = dataList[index];
   const [isDetailOpen, setIsDetailOpen] = useState<boolean>(false);
 
-  const handleDetail = () => setIsDetailOpen(!isDetailOpen);
+  //TODO: 여기서 발생하는 오류를 어떻게 해결해야 하는가..
+  const handleDetail = () => {
+    // useAppDispatch(isOpen(index));
+    setIsDetailOpen(!isDetailOpen);
+  };
 
   //TODO: 영문 한국어로 대치하는 방법
   //TODO: 첫글자 대문자로 변형 방지

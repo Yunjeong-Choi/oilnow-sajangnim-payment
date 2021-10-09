@@ -3,6 +3,7 @@ import { List } from "react-virtualized";
 import * as payDatabase from "../../../database/payDatabase.json";
 import ListItem from "./ListItem";
 import { FunctionComponent } from "react";
+import { useAppSelector } from "../../../app/hooks";
 
 //TODO: infinite scroll 직접 구현해보기
 //infinite scroll 원리를 알고나서 연결해봐야겠다.
@@ -30,6 +31,7 @@ const rowRenderer: FunctionComponent<RowRendererProps> = ({
 
 const ListContainer = () => {
   const dataList = payDatabase.dataList;
+  // const openRowIndex = useAppSelector((state: RootState) => state.pay.openRowIndex)
 
   return (
     <List
@@ -37,8 +39,7 @@ const ListContainer = () => {
       height={400}
       rowCount={dataList.length}
       rowHeight={({ index }) => {
-        // return index === fetch.openedIndex ? 95 : 45;
-        // return index === 0 ? 95 : 45;
+        // return index === openRowIndex ? 100 : 45
         return 45;
       }}
       rowRenderer={rowRenderer}
