@@ -1,7 +1,7 @@
 {"dataList": [
   {
     "payStatus": "paid",
-    "payDate": "2021. 07. 05",
+    "payDate": "21. 07. 05",
     "userID": "younghee",
     "payDetail": "주유 5만원권",
     "payType": "gifticon",
@@ -9,7 +9,7 @@
   },
   {
     "payStatus": "cancelRequest",
-    "payDate": "2021. 07. 06",
+    "payDate": "21. 07. 06",
     "userID": "heesun",
     "payDetail": "손세차 1회",
     "payType": "gifticon",
@@ -17,7 +17,7 @@
   },
   {
     "payStatus": "cancelCompleted",
-    "payDate": "2021. 07. 07",
+    "payDate": "21. 07. 07",
     "userID": "kyungjoo",
     "payDetail": "자동세차 1회",
     "payType": "gifticon",
@@ -25,7 +25,7 @@
   },
   {
     "payStatus": "paid",
-    "payDate": "2021. 07. 08",
+    "payDate": "21. 07. 08",
     "userID": "junsung",
     "payDetail": "뉴 불스원샷 경유 1개",
     "payType": "gifticon",
@@ -33,7 +33,7 @@
   },
   {
     "payStatus": "cancelRequest",
-    "payDate": "2021. 07. 09",
+    "payDate": "21. 07. 09",
     "userID": "jikova",
     "payDetail": "주유 3만원권",
     "payType": "gifticon",
@@ -41,7 +41,7 @@
   },
   {
     "payStatus": "cancelCompleted",
-    "payDate": "2021. 07. 10",
+    "payDate": "21. 07. 10",
     "userID": "bullsoneshot",
     "payDetail": "실내세차 1회",
     "payType": "gifticon",
@@ -49,7 +49,7 @@
   },
   {
     "payStatus": "paid",
-    "payDate": "2021. 07. 11",
+    "payDate": "21. 07. 11",
     "userID": "xiexieni",
     "payDetail": "불스원샷 70000 스탠다드 1개",
     "payType": "gifticon",
@@ -57,7 +57,7 @@
   },
   {
     "payStatus": "cancelRequest",
-    "payDate": "2021. 07. 12",
+    "payDate": "21. 07. 12",
     "userID": "baeksoo",
     "payDetail": "주유 5만원권",
     "payType": "gifticon",
@@ -65,7 +65,7 @@
   },
   {
     "payStatus": "cancelCompleted",
-    "payDate": "2021. 07. 13",
+    "payDate": "21. 07. 13",
     "userID": "dwellnom",
     "payDetail": "손세차 1회",
     "payType": "gifticon",
@@ -73,7 +73,7 @@
   },
   {
     "payStatus": "paid",
-    "payDate": "2021. 07. 14",
+    "payDate": "21. 07. 14",
     "userID": "ahndwellnom",
     "payDetail": "자동세차 1회",
     "payType": "gifticon",
@@ -81,7 +81,7 @@
   },
   {
     "payStatus": "cancelRequest",
-    "payDate": "2021. 07. 15",
+    "payDate": "21. 07. 15",
     "userID": "Castella",
     "payDetail": "뉴 불스원샷 경유 1개",
     "payType": "gifticon",
@@ -89,7 +89,7 @@
   },
   {
     "payStatus": "cancelCompleted",
-    "payDate": "2021. 07. 16",
+    "payDate": "21. 07. 16",
     "userID": "Donutchoigo",
     "payDetail": "주유 3만원권",
     "payType": "gifticon",
@@ -97,7 +97,7 @@
   },
   {
     "payStatus": "paid",
-    "payDate": "2021. 07. 17",
+    "payDate": "21. 07. 17",
     "userID": "Saechahagogasaeyo",
     "payDetail": "실내세차 1회",
     "payType": "gifticon",
@@ -105,7 +105,7 @@
   },
   {
     "payStatus": "cancelRequest",
-    "payDate": "2021. 07. 18",
+    "payDate": "21. 07. 18",
     "userID": "Gireumneokogasaeyo",
     "payDetail": "불스원샷 70000 스탠다드 1개",
     "payType": "gifticon",
@@ -113,7 +113,7 @@
   },
   {
     "payStatus": "cancelCompleted",
-    "payDate": "2021. 07. 19",
+    "payDate": "21. 07. 19",
     "userID": "younghee",
     "payDetail": "주유 5만원권",
     "payType": "gifticon",
@@ -121,7 +121,7 @@
   },
   {
     "payStatus": "paid",
-    "payDate": "2021. 07. 20",
+    "payDate": "21. 07. 20",
     "userID": "heesun",
     "payDetail": "손세차 1회",
     "payType": "gifticon",
@@ -129,7 +129,7 @@
   },
   {
     "payStatus": "cancelRequest",
-    "payDate": "2021. 07. 21",
+    "payDate": "21. 07. 21",
     "userID": "kyungjoo",
     "payDetail": "자동세차 1회",
     "payType": "gifticon",
@@ -137,7 +137,7 @@
   },
   {
     "payStatus": "cancelCompleted",
-    "payDate": "2021. 07. 22",
+    "payDate": "21. 07. 22",
     "userID": "junsung",
     "payDetail": "뉴 불스원샷 경유 1개",
     "payType": "gifticon",
@@ -145,7 +145,7 @@
   },
   {
     "payStatus": "paid",
-    "payDate": "2021. 07. 23",
+    "payDate": "21. 07. 23",
     "userID": "jikova",
     "payDetail": "주유 3만원권",
     "payType": "gifticon",
@@ -153,7 +153,7 @@
   },
   {
     "payStatus": "cancelRequest",
-    "payDate": "2021. 07. 24",
+    "payDate": "21. 07. 24",
     "userID": "bullsoneshot",
     "payDetail": "실내세차 1회",
     "payType": "gifticon",
@@ -161,7 +161,7 @@
   },
   {
     "payStatus": "cancelCompleted",
-    "payDate": "2021. 07. 25",
+    "payDate": "21. 07. 25",
     "userID": "xiexieni",
     "payDetail": "불스원샷 70000 스탠다드 1개",
     "payType": "gifticon",
@@ -169,7 +169,7 @@
   },
   {
     "payStatus": "paid",
-    "payDate": "2021. 07. 26",
+    "payDate": "21. 07. 26",
     "userID": "baeksoo",
     "payDetail": "주유 5만원권",
     "payType": "gifticon",
@@ -177,7 +177,7 @@
   },
   {
     "payStatus": "cancelRequest",
-    "payDate": "2021. 07. 27",
+    "payDate": "21. 07. 27",
     "userID": "dwellnom",
     "payDetail": "손세차 1회",
     "payType": "gifticon",
@@ -185,7 +185,7 @@
   },
   {
     "payStatus": "cancelCompleted",
-    "payDate": "2021. 07. 28",
+    "payDate": "21. 07. 28",
     "userID": "ahndwellnom",
     "payDetail": "자동세차 1회",
     "payType": "gifticon",
@@ -193,7 +193,7 @@
   },
   {
     "payStatus": "paid",
-    "payDate": "2021. 07. 29",
+    "payDate": "21. 07. 29",
     "userID": "Castella",
     "payDetail": "뉴 불스원샷 경유 1개",
     "payType": "gifticon",
@@ -201,7 +201,7 @@
   },
   {
     "payStatus": "cancelRequest",
-    "payDate": "2021. 07. 30",
+    "payDate": "21. 07. 30",
     "userID": "Donutchoigo",
     "payDetail": "주유 3만원권",
     "payType": "gifticon",
@@ -209,7 +209,7 @@
   },
   {
     "payStatus": "cancelCompleted",
-    "payDate": "2021. 07. 31",
+    "payDate": "21. 07. 31",
     "userID": "Saechahagogasaeyo",
     "payDetail": "실내세차 1회",
     "payType": "gifticon",
@@ -217,7 +217,7 @@
   },
   {
     "payStatus": "paid",
-    "payDate": "2021. 08. 01",
+    "payDate": "21. 08. 01",
     "userID": "Gireumneokogasaeyo",
     "payDetail": "불스원샷 70000 스탠다드 1개",
     "payType": "gifticon",
@@ -225,7 +225,7 @@
   },
   {
     "payStatus": "cancelRequest",
-    "payDate": "2021. 08. 02",
+    "payDate": "21. 08. 02",
     "userID": "younghee",
     "payDetail": "주유 5만원권",
     "payType": "gifticon",
@@ -233,7 +233,7 @@
   },
   {
     "payStatus": "cancelCompleted",
-    "payDate": "2021. 08. 03",
+    "payDate": "21. 08. 03",
     "userID": "heesun",
     "payDetail": "손세차 1회",
     "payType": "gifticon",
