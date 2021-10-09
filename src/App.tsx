@@ -1,9 +1,11 @@
 import PayContainer from "./components/container/PayContainer";
+import PayCancelModal from "./components/modal/payCancel";
 
 function App() {
   return (
     <div className="App">
-      <PayContainer />
+      {/* <PayContainer /> */}
+      <PayCancelModal />
     </div>
   );
 }

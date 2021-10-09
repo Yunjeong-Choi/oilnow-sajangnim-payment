@@ -9,7 +9,7 @@ const ContainerHeader: FunctionComponent = (props) => {
     <HeaderBox>
       <HeaderInnerBox>
         <MenuButton>메뉴</MenuButton>
-        <Title>{children}</Title>
+        <ContainerTitle>{children}</ContainerTitle>
       </HeaderInnerBox>
       <HeaderInnerBox>
         <NotiButton />
@@ -29,8 +29,8 @@ const HeaderBox = styled.header`
   justify-content: space-between;
   align-items: center;
   padding: var(--defaultSidePadding);
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 25px;
+  padding-bottom: 25px;
 `;
 
 const HeaderInnerBox = styled.div`
@@ -49,7 +49,7 @@ const MenuButton = styled(RoundSquareButton)`
   margin-right: 8px;
 `;
 
-const Title = styled.div`
+const ContainerTitle = styled.div`
   font-weight: bold;
   font-size: 28px;
   text-align: left;
