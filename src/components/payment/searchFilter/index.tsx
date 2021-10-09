@@ -8,7 +8,7 @@ import UserIDFilter from "./UserIDFilter";
 const PaySearchFilter = () => {
   return (
     <SearchFilter>
-      <FilterTitle />
+      <FilterTitle>검색 필터</FilterTitle>
       <DateFilter />
       <PayStatusFilter />
       <LastFilter>

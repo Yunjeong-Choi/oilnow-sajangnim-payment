@@ -1,9 +1,12 @@
+import { FunctionComponent } from "react";
 import styled from "styled-components";
 
-const FilterTitle = () => {
+const FilterTitle: FunctionComponent = (props) => {
+  const { children } = props;
+
   return (
     <TitleBox>
-      <TitleText>검색 필터</TitleText>
+      <TitleText>{children}</TitleText>
     </TitleBox>
   );
 };

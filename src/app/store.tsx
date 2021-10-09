@@ -2,6 +2,7 @@ import { configureStore } from "@reduxjs/toolkit";
 import payReducer from "../features/paySlice";
 
 export const store = configureStore({
+  devTools: true,
   reducer: {
     pay: payReducer,
   },

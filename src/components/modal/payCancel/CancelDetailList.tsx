@@ -5,7 +5,7 @@ import FilterTitle from "../../payment/searchFilter/FilterTitle";
 const CancelDetailList = () => {
   return (
     <ListBox>
-      <FilterTitle />
+      <FilterTitle>취소 항목</FilterTitle>
       <ListInnerBox>
         <DetailItem>
           <ItemTitle>결제일자</ItemTitle>
