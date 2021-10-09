@@ -2,16 +2,16 @@ import styled from "styled-components";
 
 const FilterTitle = () => {
   return (
-    <FilterBox>
+    <TitleBox>
       <TitleText>검색 필터</TitleText>
-    </FilterBox>
+    </TitleBox>
   );
 };
 
 export default FilterTitle;
 
 //styled-components
-const FilterBox = styled.div`
+const TitleBox = styled.div`
   display: flex;
   justify-content: left;
   margin-bottom: 10px;
