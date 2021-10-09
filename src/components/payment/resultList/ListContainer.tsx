@@ -1,9 +1,7 @@
-import styled from "styled-components";
 import { List } from "react-virtualized";
 import * as payDatabase from "../../../database/payDatabase.json";
 import ListItem from "./ListItem";
 import { FunctionComponent } from "react";
-import { useAppSelector } from "../../../app/hooks";
 
 //TODO: infinite scroll 직접 구현해보기
 //infinite scroll 원리를 알고나서 연결해봐야겠다.
@@ -24,7 +22,7 @@ const rowRenderer: FunctionComponent<RowRendererProps> = ({
 }) => {
   return (
     <div key={key} style={style}>
-      <ListItem index={index} />
+      <ListItem curIndex={index} />
     </div>
   );
 };

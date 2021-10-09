@@ -1,26 +1,24 @@
-import { FunctionComponent, useState } from "react";
+import { FunctionComponent, useEffect, useState } from "react";
 import styled from "styled-components";
 import * as payDatabase from "../../../database/payDatabase.json";
 import { SquareButton } from "../../common/Buttons";
-import { useAppDispatch } from "../../../app/hooks";
+import { useAppDispatch, useAppSelector } from "../../../hooks/useStore";
 import { isOpen } from "../../../features/paySlice";
 
 const dataList = payDatabase.dataList;
 
 interface ListItemProps {
-  index: number;
+  curIndex: number;
 }
 
 const ListItem: FunctionComponent<ListItemProps> = (props) => {
-  const { index } = props;
-  const curData = dataList[index];
-  const [isDetailOpen, setIsDetailOpen] = useState<boolean>(false);
+  const { curIndex } = props;
+  const curData = dataList[curIndex];
+  const dispatch = useAppDispatch();
+  const { isDetailOpen, openedRowIndex } = useAppSelector((state) => state.pay);
 
-  //TODO: 여기서 발생하는 오류를 어떻게 해결해야 하는가..
-  const handleDetail = () => {
-    // useAppDispatch(isOpen(index));
-    setIsDetailOpen(!isDetailOpen);
-  };
+  //TODO:  dispatch 오류
+  const handleDetail = () => dispatch(isOpen(curIndex));
 
   //TODO: 영문 한국어로 대치하는 방법
   //TODO: 첫글자 대문자로 변형 방지
@@ -36,10 +34,10 @@ const ListItem: FunctionComponent<ListItemProps> = (props) => {
         </PayText>
         <PayText>{curData.payPrice}</PayText>
         <DetailOpenBtn onClick={handleDetail}>
-          {isDetailOpen ? "접기▲" : "열기▼"}
+          {isDetailOpen && openedRowIndex === curIndex ? "접기▲" : "열기▼"}
         </DetailOpenBtn>
       </BasicInfo>
-      {isDetailOpen && (
+      {isDetailOpen && openedRowIndex === curIndex && (
         <DetailInfo>
           <DetailTextBox>
             <div>상세내역</div>

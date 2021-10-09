@@ -3,7 +3,7 @@ import { createSlice, PayloadAction } from "@reduxjs/toolkit";
 // Define a type for the slice state
 interface PayState {
   isDetailOpen: boolean;
-  openRowIndex?: number;
+  openedRowIndex?: number;
 }
 
 // Define the initial state using that type
@@ -18,7 +18,7 @@ export const paySlice = createSlice({
   reducers: {
     isOpen: (state, action: PayloadAction<number>) => {
       state.isDetailOpen = !state.isDetailOpen;
-      state.openRowIndex = action.payload;
+      state.openedRowIndex = !state.isDetailOpen ? undefined : action.payload;
     },
   },
 });
