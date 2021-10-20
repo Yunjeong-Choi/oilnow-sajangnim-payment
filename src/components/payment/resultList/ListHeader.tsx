@@ -9,9 +9,9 @@ const ListHeader = () => {
       <ColumnTitle>고객ID</ColumnTitle>
       <ColumnTitle>금액</ColumnTitle>
       <SortBy>
-        <option selected>정렬</option>
-        <option>최신순</option>
-        <option>오래된순</option>
+        <option defaultValue="정렬">정렬</option>
+        <option value="최신순">최신순</option>
+        <option value="오래된순">오래된순</option>
       </SortBy>
     </HeaderBox>
   );
