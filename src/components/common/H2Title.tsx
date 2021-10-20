@@ -20,5 +20,6 @@ const TitleBox = styled.div`
 `;
 
 const TitleText = styled.h2`
-  font-weight: 500;
+  font-weight: bold;
+  font-size: 20px;
 `;

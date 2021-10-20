@@ -3,7 +3,6 @@ import styled from "styled-components";
 const ListHeader = () => {
   return (
     <HeaderBox>
-      {/* TODO: container 열간격과 어떻게 맞출것인가 */}
       <ColumnTitle>결제상태</ColumnTitle>
       <ColumnTitle>일자</ColumnTitle>
       <ColumnTitle>고객ID</ColumnTitle>

@@ -1,32 +1,34 @@
 import styled from "styled-components";
 import { SquareButton } from "../../common/Buttons";
 
-const CancelButtons = () => {
+const CancelDecision = () => {
   return (
-    <ButtonsBox>
+    <DecisionBox>
       <ReturnButton>돌아가기</ReturnButton>
       <CancelConfirmBtn>취소확정</CancelConfirmBtn>
-    </ButtonsBox>
+    </DecisionBox>
   );
 };
 
-export default CancelButtons;
+export default CancelDecision;
 
 //styled-components
-const ButtonsBox = styled.div`
+const DecisionBox = styled.div`
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-item: center;
   padding: var(--defaultSidePadding);
 `;
 
 const ReturnButton = styled(SquareButton)`
   width: 150px;
-  height: 30px;
+  height: 35px;
   background: var(--darkGray);
   border: none;
 
   color: #ffffff;
+  font-size: 15px;
+  font-weight: 500;
 `;
 
 const CancelConfirmBtn = styled(ReturnButton)`

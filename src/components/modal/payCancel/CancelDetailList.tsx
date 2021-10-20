@@ -1,11 +1,22 @@
 import styled from "styled-components";
-import FilterTitle from "../../container/common/H2Title";
+import H2Title from "../../common/H2Title";
 //TODO: filterTitle 리팩토링
+
+const database = {
+  payStatus: "paid",
+  payDate: "21. 07. 05",
+  userID: "younghee",
+  payDetail: "주유 5만원권",
+  payType: "gifticon",
+  payPrice: 50000,
+};
+
+//TODO: 객체를 순회하는 방법은?
 
 const CancelDetailList = () => {
   return (
     <ListBox>
-      <FilterTitle>취소 항목</FilterTitle>
+      <H2Title>취소 항목</H2Title>
       <ListInnerBox>
         <DetailItem>
           <ItemTitle>결제일자</ItemTitle>
@@ -38,8 +49,15 @@ const ListBox = styled.div`
 `;
 
 const ListInnerBox = styled.div`
+  height: 70px;
+  border-top: 1px solid var(--gray);
+  border-bottom: 1px solid var(--gray);
+
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
+  margin: 10px 0;
+  padding: 10px 8px;
 `;
 
 const DetailItem = styled.div`
@@ -61,9 +79,12 @@ const ItemData = styled.div`
 `;
 
 const ListTotal = styled.div`
+  font-weight: 500;
+
   display: flex;
   justify-content: right;
   align-item: center;
+  padding-right: 8px;
 `;
 
 const TotalTitle = styled.div`

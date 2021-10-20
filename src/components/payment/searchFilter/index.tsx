@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { SquareButton } from "../../common/Buttons";
-import H2Title from "../../container/common/H2Title";
+import H2Title from "../../common/H2Title";
 import DateFilter from "./DateFilter";
 import PayStatusFilter from "./PayStatusFilter";
 import UserIDFilter from "./UserIDFilter";
@@ -26,7 +26,7 @@ const SearchFilter = styled.div`
   height: 130px;
   background: #ffffff;
 
-  font-size: 20px;
+  font-size: 14px;
 
   display: flex;
   flex-direction: column;
@@ -47,5 +47,4 @@ const FilterResetButton = styled(SquareButton)`
   border: none;
 
   color: #ffffff;
-  font-size: 14px;
 `;

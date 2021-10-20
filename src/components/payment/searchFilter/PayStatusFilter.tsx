@@ -25,7 +25,5 @@ const PayStatusBox = styled.div`
 const PayStatus = styled(RoundSquareButton)`
   height: 30px;
   width: 30%;
-
-  font-size: 14px;
 `;
 //width 고정값은 80px
