@@ -8,8 +8,11 @@ const ListHeader = () => {
       <ColumnTitle>일자</ColumnTitle>
       <ColumnTitle>고객ID</ColumnTitle>
       <ColumnTitle>금액</ColumnTitle>
-      <SortBy></SortBy>
-      {/* TODO: select-option 넣어야 함 */}
+      <SortBy>
+        <option selected>정렬</option>
+        <option>최신순</option>
+        <option>오래된순</option>
+      </SortBy>
     </HeaderBox>
   );
 };
@@ -37,5 +40,5 @@ const ColumnTitle = styled.div`
 `;
 
 const SortBy = styled.select`
-  width: 60px;
+  width: 70px;
 `;

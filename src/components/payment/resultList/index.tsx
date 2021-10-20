@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import { RoundSquareButton, SquareButton } from "../../common/Buttons";
 import ListHeader from "./ListHeader";
 import ListContainer from "./ListContainer";
 
@@ -14,7 +13,7 @@ const PaySearchResultList = () => {
 
 export default PaySearchResultList;
 
-//styled-components
+// styled - components;
 const ResultList = styled.div`
   display: flex;
   flex-direction: column;

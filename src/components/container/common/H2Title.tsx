@@ -1,7 +1,7 @@
 import { FunctionComponent } from "react";
 import styled from "styled-components";
 
-const FilterTitle: FunctionComponent = (props) => {
+const H2Title: FunctionComponent = (props) => {
   const { children } = props;
 
   return (
@@ -11,15 +11,14 @@ const FilterTitle: FunctionComponent = (props) => {
   );
 };
 
-export default FilterTitle;
+export default H2Title;
 
 //styled-components
 const TitleBox = styled.div`
   display: flex;
   justify-content: left;
-  margin-bottom: 10px;
 `;
 
-const TitleText = styled.div`
+const TitleText = styled.h2`
   font-weight: 500;
 `;

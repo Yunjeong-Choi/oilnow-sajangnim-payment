@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { SquareButton } from "../../common/Buttons";
-import FilterTitle from "./FilterTitle";
+import H2Title from "../../container/common/H2Title";
 import DateFilter from "./DateFilter";
 import PayStatusFilter from "./PayStatusFilter";
 import UserIDFilter from "./UserIDFilter";
@@ -8,13 +8,13 @@ import UserIDFilter from "./UserIDFilter";
 const PaySearchFilter = () => {
   return (
     <SearchFilter>
-      <FilterTitle>검색 필터</FilterTitle>
+      <H2Title>검색 필터</H2Title>
       <DateFilter />
       <PayStatusFilter />
-      <LastFilter>
+      <LastRow>
         <UserIDFilter />
         <FilterResetButton>초기화</FilterResetButton>
-      </LastFilter>
+      </LastRow>
     </SearchFilter>
   );
 };
@@ -23,17 +23,20 @@ export default PaySearchFilter;
 
 // styled-components
 const SearchFilter = styled.div`
+  height: 130px;
   background: #ffffff;
 
   font-size: 20px;
 
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   padding: var(--defaultSidePadding);
+  padding-top: 10px;
   padding-bottom: 10px;
 `;
 
-const LastFilter = styled.div`
+const LastRow = styled.div`
   display: flex;
   justify-content: space-between;
 `;

@@ -29,8 +29,8 @@ const HeaderBox = styled.header`
   justify-content: space-between;
   align-items: center;
   padding: var(--defaultSidePadding);
-  padding-top: 25px;
-  padding-bottom: 25px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 `;
 
 const HeaderInnerBox = styled.div`

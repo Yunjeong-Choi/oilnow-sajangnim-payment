@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import FilterTitle from "../../payment/searchFilter/FilterTitle";
+import FilterTitle from "../../container/common/H2Title";
 
 const CancelReason = () => {
   return (

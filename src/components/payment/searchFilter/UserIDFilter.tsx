@@ -10,7 +10,7 @@ export default UserIDFilter;
 
 //styled-components
 const UserIDInput = styled.input`
-  height: 35px;
+  height: 30px;
   width: 100%;
   border: 0.7px solid var(--gray);
   box-sizing: border-box;

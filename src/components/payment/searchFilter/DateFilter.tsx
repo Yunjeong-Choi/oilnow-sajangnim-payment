@@ -5,7 +5,6 @@ import { useState } from "react";
 const DateFilter = () => {
   const [startDate, setStartDate] = useState<Date>();
   const [endDate, setEndDate] = useState<Date>();
-  //TODO: 초기값을 없애고 싶은데 그럼 발생하는 type의 문제를 어떻게 해야할지 모르겠음...
 
   return (
     <DateBox>
@@ -29,10 +28,10 @@ export default DateFilter;
 
 //styled-components
 const DateBox = styled.div`
+  height: 30px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 10px;
 `;
 
 const Tilde = styled.div`
