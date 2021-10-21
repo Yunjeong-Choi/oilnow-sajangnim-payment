@@ -1,6 +1,5 @@
 import styled from "styled-components";
 import H2Title from "../../common/H2Title";
-//TODO: filterTitle 리팩토링
 
 const database = {
   payStatus: "paid",
@@ -9,9 +8,10 @@ const database = {
   payDetail: "주유 5만원권",
   payType: "gifticon",
   payPrice: 50000,
+  cancelReason: null,
 };
 
-//TODO: 객체를 순회하는 방법은?
+//TODO: DetailItem을 반복하지 않는 방법은?
 
 const CancelDetailList = () => {
   return (
@@ -20,20 +20,20 @@ const CancelDetailList = () => {
       <ListInnerBox>
         <DetailItem>
           <ItemTitle>결제일자</ItemTitle>
-          <ItemData>21.09.10</ItemData>
+          <ItemData>{database.payDate}</ItemData>
         </DetailItem>
         <DetailItem>
           <ItemTitle>고객ID</ItemTitle>
-          <ItemData>younghee</ItemData>
+          <ItemData>{database.userID}</ItemData>
         </DetailItem>
         <DetailItem>
           <ItemTitle>상세내역</ItemTitle>
-          <ItemData>주유 5만원권</ItemData>
+          <ItemData>{database.payDetail}</ItemData>
         </DetailItem>
       </ListInnerBox>
       <ListTotal>
         <TotalTitle>취소 예정 금액 : </TotalTitle>
-        <TotalData>총 50,000원</TotalData>
+        <TotalData>{database.payPrice}</TotalData>
       </ListTotal>
     </ListBox>
   );
@@ -45,7 +45,6 @@ export default CancelDetailList;
 const ListBox = styled.div`
   display: flex;
   flex-direction: column;
-  padding: var(--defaultSidePadding);
 `;
 
 const ListInnerBox = styled.div`
@@ -91,6 +90,7 @@ const TotalTitle = styled.div`
   display: flex;
   justify-content: left;
   align-item: center;
+  margin-right: 3px;
 `;
 
 const TotalData = styled.div`

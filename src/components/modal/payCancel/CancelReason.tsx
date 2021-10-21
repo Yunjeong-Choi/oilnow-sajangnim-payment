@@ -24,7 +24,6 @@ const ReasonBox = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: var(--defaultSidePadding);
   padding-right: 15px;
 `;
 

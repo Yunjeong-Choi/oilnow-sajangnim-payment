@@ -17,7 +17,6 @@ const DecisionBox = styled.div`
   display: flex;
   justify-content: space-evenly;
   align-item: center;
-  padding: var(--defaultSidePadding);
 `;
 
 const ReturnButton = styled(SquareButton)`
